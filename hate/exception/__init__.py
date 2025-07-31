@@ -1,0 +1,35 @@
+import sys
+
+# custome error message function
+def error_message_detail(error, error_detail: sys):
+    try:
+        _, _, exc_tb = error_detail.exc_info()
+
+        # ✅ Defensive check
+        if exc_tb is not None and exc_tb.tb_frame is not None:
+            file_name = exc_tb.tb_frame.f_code.co_filename
+            line_number = exc_tb.tb_lineno
+        else:
+            file_name = "Unknown"
+            line_number = "Unknown"
+
+        error_message = "Error occurred in python script name [{0}] line number [{1}] error message [{2}]".format(
+            file_name, line_number, str(error))
+        
+        return error_message
+    except Exception as e:
+        return f"Error occurred while formatting error message: {str(e)}"
+
+
+class CustomException(Exception):
+    def __init__(self, error_message, error_detail: sys):
+        super().__init__(error_message)
+        """
+        :param error_message: error message in string format
+        """
+        self.error_message = error_message_detail(
+            error_message, error_detail=error_detail
+        )
+
+    def __str__(self):
+        return self.error_message

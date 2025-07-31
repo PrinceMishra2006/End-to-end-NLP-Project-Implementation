@@ -1,0 +1,14 @@
+[ 2025-07-31 16:16:38,254 ] tensorflow - DEBUG - Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+[ 2025-07-31 16:16:39,279 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2025-07-31 16:16:39,279 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2025-07-31 16:16:39,279 ] h5py._conv - DEBUG - Creating converter from 7 to 5
+[ 2025-07-31 16:16:39,279 ] h5py._conv - DEBUG - Creating converter from 5 to 7
+[ 2025-07-31 16:16:43,176 ] asyncio - DEBUG - Using proactor: IocpProactor
+[ 2025-07-31 16:16:43,197 ] uvicorn.error - INFO - Started server process [14316]
+[ 2025-07-31 16:16:43,198 ] uvicorn.error - INFO - Waiting for application startup.
+[ 2025-07-31 16:16:43,199 ] uvicorn.error - INFO - Application startup complete.
+[ 2025-07-31 16:16:43,199 ] uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+[ 2025-07-31 16:18:17,354 ] uvicorn.error - INFO - Shutting down
+[ 2025-07-31 16:18:17,463 ] uvicorn.error - INFO - Waiting for application shutdown.
+[ 2025-07-31 16:18:17,464 ] uvicorn.error - INFO - Application shutdown complete.
+[ 2025-07-31 16:18:17,465 ] uvicorn.error - INFO - Finished server process [14316]
